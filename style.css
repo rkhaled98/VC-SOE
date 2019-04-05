@@ -1,8 +1,23 @@
+* {
+    box-sizing: border-box;
+}
+
+
 body{
     font-family: 'Open Sans', sans-serif;
+    margin: 0px;
+    padding: 0px;
     /* text-align: center; */
 }
 
-/* .testimonial-section{
+.section-odd{
+    margin:0px;
+    padding:0px;
     background-color: #3EC28F;
-} */
+}
+
+.section-even{
+    margin:0px;
+    padding:0px;
+    background-color: #C095FA;
+}
