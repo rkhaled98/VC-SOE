@@ -2,31 +2,36 @@
 <html>
 
     <head>
+        
         <title>VC SOE</title>
+        <!-- <meta http-equiv="refresh" content="30"> -->
         <link rel="stylesheet" type="text/css" href="style.css">
         <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'/>   
         <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet"> 
         <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
-        <link href="fontawesome-free-5.8.1-web/css/all.css" rel="stylesheet">    
+        <link href="fontawesome-free-5.8.1-web/css/all.css" rel="stylesheet">   
+        <script type="text/javascript" src="http://livejs.com/live.js"></script> 
     </head>
 
     <body>
         <div class="cover">
             <nav>
                 <div class="navigation">
-                        <div id="nav-logo" class="nav-item"><img height=50px; src="img/profile.png"></div>
+                        <div id="nav-logo" class="nav-item"><img height=50px; src="img/vc-logo.png"></div>
                         <a href="#" class="nav-item">About</a>
                         <a href="#" class="nav-item">Members</a>
                         <a href="#" class="nav-item">Get Involved</a>
                         <a href="#" class="nav-item">Projects</a>
                         <a href="#" class="nav-item">Blog</a>
                         <a href="#" class="nav-item">Sign In</a>
-                        <button class="nav-item">Sign Up</button>
+                        <button id="sign-up-nav" class="nav-item">Sign Up</button>
+                        
                         <div id="hamburger"><i class="nav-item fas fa-bars"></i></div>
                 </div>
+                <button id="sign-up-nav-float" class="nav-item-float">Sign Up</button>
             </nav>
 
-            <div id="section1" class="greeting">
+            <div class="greeting">
                 <div class="greeting-item greeting-text">
                     <h1>A collective of engineers.</h1>
                     <h3>Working together to build solutions to meaningful problems!</h3>
@@ -36,120 +41,181 @@
                     <div id="greeting-img"></div>
                 </div>
             </div> <!--greeting div end-->
-            <div>
-                <h4>Looking to work with companies and individuals.</h4>
 
-                <div>Img 1</div>
-                <div>Img 2</div>
-                <div>Img 3</div>
-                <div>Img 4</div>
-                <div>Img 5</div>
-                <div>Img 6</div>
-                <div>Img 7</div>
-                <div>Img 8</div>
+            <div class="companies-container">
+                <div class="companies-header"><h4>Looking to work with companies and individuals.</h4></div>
+
+                <div class="companies-item"><i class="fab fa-github"></i></div>
+                <div class="companies-item"><i class="fab fa-twitter"></i></div>
+                <div class="companies-item"><i class="fab fa-amazon"></i></div>
+                <div class="companies-item"><i class="fab fa-google"></i></div>
+                <div class="companies-item"><i class="fas fa-university"></i></div>
+                <div class="companies-item"><i class="fas fa-graduation-cap"></i></div>
+                <div class="companies-item"><i class="fas fa-user-friends"></i></div>
+                <div class="companies-item"><i class="fas fa-building"></i></div>
             </div>
 
-            <div id="section2" class="testimonial-section section-even">
-                <h5>''Don't document the problem, fix it.''</h3>
-                <div><img height=50px; src="img/profile.png"></div>
-                <h6>Atli Bjorgvin Oddsson</h6>
+            <div class="testimonial-section">
+                <h4>"Don't document the problem, fix it."</h4>
+                <div><img src="img/atli.jpeg"></div>
+                <h5>Atli Bjorgvin Oddsson</h5>
             </div>
     
-            <div id="section3" class="section-odd">
-                <h3>Collaborate with us, and be involved.</h3>
-                <h4>We want to keep you in the loop and updated!</h4>
-                <div>
-                    <div><img height=50px; src="img/profile.png"></div>
-                    <h3>Caption</h3>
-                    <h4>Subcaption</h4>
+            <div class="description-container">
+                <div class="description-item description-header">
+                    <h3>Collaborate with us, and be involved in the process.</h3>
+                    <h4>We want to keep you in the loop and updated!</h4>
                 </div>
-                <div>
-                    <div><img height=50px; src="img/profile.png"></div>
-                    <h3>Caption</h3>
-                    <h4>Subcaption</h4>
+
+                <div class="description-pics-container">
+                    <div class="description-pics-item">
+                        <div><img src="img/handshake.jpg"></div>
+                        <div class="description-pics-caption">
+                                <h3>Honesty and Transparency</h3>
+                                <h4>From the very beginning to the end of
+                                    your project, we are dedicated to
+                                    being the most honest
+                                </h4>
+                        </div>
+                    </div>
+                    <div class="description-pics-item">
+                        <div><img src="img/coding-screen.jpg"></div>
+                        <div class="description-pics-caption">
+                                <h3>Honesty and Transparency</h3>
+                                <h4>From the very beginning to the end of
+                                    your project, we are dedicated to
+                                    being the most honest
+                                </h4>
+                        </div>
+                    </div>
+                    <div class="description-pics-item">
+                        <div><img src="img/running.jpg"></div>
+                        <div class="description-pics-caption">
+                                <h3>Honesty and Transparency</h3>
+                                <h4>From the very beginning to the end of
+                                    your project, we are dedicated to
+                                    being the most honest
+                                </h4>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <div><img height=50px; src="img/profile.png"></div>
-                    <h3>Caption</h3>
-                    <h4>Subcaption</h4>
+                <div class="description-item">
+                    <button>Contact Us!</button>
                 </div>
-            </div>
+            </div> <!-- description container div end-->
     
-            <div id="section4" class="section-even">
-                    <h3>Collaborate with everyone, at every phase</h3>
-                    <h4>Each contributor owns their part of the creative process and stays in sync along the way--across any platform.</h4>
-                    <div>
-                        <div><img height=50px; src="img/profile.png"></div>
-                        <h3>Caption</h3>
-                        <h4>Subcaption</h4>
-                    </div>
-                    <div>
-                        <div><img height=50px; src="img/profile.png"></div>
-                        <h3>Caption</h3>
-                        <h4>Subcaption</h4>
-                    </div>
-                    <div>
-                        <div><img height=50px; src="img/profile.png"></div>
-                        <h3>Caption</h3>
-                        <h4>Subcaption</h4>
-                    </div>
+
+            <div class="testimonial-section">
+                    <h4>"Programming without an overall architecture or design in mind is like exploring a cave with only a flashlight: You don't know where you've been, you don't know where you're going, and you don't know quite where you are."</h4>
+                    <div><img src="img/dannythorpe.jpg"></div>
+                    <h5>Danny Thorpe</h5>
             </div>
+
+
+            <div class="description-container">
+                    <div class="description-item description-header">
+                        <h3>What do our previous customers have to say?</h3>
+                        <h4>Spoiler alert: they're super happy!</h4>
+                    </div>
+
+                    <div class="description-pics-container">
+                        <div class="description-pics-item">
+                            <div><img src="img/man1.jpg"></div>
+                            <div class="description-pics-caption">
+                                    <h3>John D, CEO of XXX</h3>
+                                    <h4>
+                                        "One thing that's really important in a partner
+                                        is trust, and VC SOE will always have my back"
+                                    </h4>
+                            </div>
+                        </div>
+                        <div class="description-pics-item">
+                            <div><img src="img/woman1.jpg"></div>
+                            <div class="description-pics-caption">
+                                    <h3>Mary T, Designer at YYY</h3>
+                                    <h4>"They were so fast!"
+                                    </h4>
+                            </div>
+                        </div>
+                        <div class="description-pics-item">
+                            <div><img src="img/woman2.jpg"></div>
+                            <div class="description-pics-caption">
+                                    <h3>Chris W, CTO of ZZZ</h3>
+                                    <h4>"Strike up a deal with VC SOE as fast as you can. You won't regret it!"
+                                    </h4>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="description-item">
+                        <button>Contact Us!</button>
+                    </div> -->
+            </div> <!-- description container div end-->
+
     
-            <div id="section5" class="testimonial-section section-odd">
-                <h5>"Programming without an overall architecture or design in mind is like exploring a cave with only a flashlight: You don't know where you've been, you don't know where you're going, and you don't know quite where you are."</h3>
-                <div><img height=50px; src="img/profile.png"></div>
-                <h6>Danny Thorpe</h6>
-            </div>
-    
-            <div id="signup-section" class="section-even">
+            <div id="signup-section" class="signup-container">
                 <h4>Create an account to get in touch.</h4>
                 <button>Sign up with Google</button>
                 <div>or</div>
                 <div><input placeholder="Email"></div>
                 <div><input placeholder="Password"></div>
                 <button>Create account...</button>
-                <div>Already have an account? <a href="#">Sign In</a></div>
-    
+                <div class="small">Already have an account? <a href="#">Sign In</a></div>
             </div>
+
+            <footer>
+                <div class="foot-item">
+                    <h2>VC SOE</h2>
+                    <p>Instagram</p>
+                    <p>Facebook</p>
+                    <p>Twitter</p>
+                </div>
+
+                <div class="foot-item">
+                    <ul style="list-style-type:none;">
+                        <li><h5>What we do</h5> </li>
+                        <li>Web Development</li>
+                        <li>Software Engineering</li>
+                        <li>Software Design and Implementation</li>
+                        <li>Graphic Design</li>
+                        <li>Brainstorming</li> 
+                        <li>Consulting</li> 
+                    </ul> 
+                </div>
+
+                <div class="foot-item">
+                    <ul style="list-style-type:none;">
+                        <li><h5>Explore</h5> </li>
+                        <li>VC SOE</li>
+                        <li>About</li>
+                        <li>Previous Clients</li>
+                        <li>Blog</li>
+                        <li>Our Staff</li>
+                        <li>Features</li>
+                        <li>Contact</li>
+                        <li>Learn to code!</li>
+                        <li>VC SOE Organization</li>
+                    </ul>
+                </div>
+
+                <div class="foot-item">
+                    <ul style="list-style-type:none;">
+                            <li><h5>Resources</h5> </li>
+                            <li>Community Resources Hub</li>
+                            <li>Support</li>
+                            <li>Developers</li>
+                            <li>Downloads</li>
+                            <li>Releases</li>
+                            <li>Careers</li>
+                            <li>Legal</li>
+                        </ul>
+                </div>
+
+            </footer>            
+
         </div> <!--top level div end-->
 
     </body>
 
-    <footer>
-        <div>
-            <h2>VC SOE 1,2,3</span></h2>
-        </div>
-        <h5>What we do</h5>
-        <ul>
-            <li>Web Development</li>
-            <li>Software Engineering</li>
-            <li>Software Design and Implementation</li>
-            <li>Graphic Design</li>
-            <li>Brainstorming</li> 
-            <li>Consulting</li> 
-        </ul>
-        <h5>Explore</h5>
-        <ul>
-            <li>VC SOE</li>
-            <li>About</li>
-            <li>Previous Clients</li>
-            <li>Blog</li>
-            <li>Our Staff</li>
-            <li>Features</li>
-            <li>Contact</li>
-            <li>Learn to code!</li>
-            <li>VC SOE Organization</li>
-        </ul>
-        <h5>Resources</h5>
-        <ul>
-            <li>Community Resources Hub</li>
-            <li>Support</li>
-            <li>Developers</li>
-            <li>Downloads</li>
-            <li>Releases</li>
-            <li>Careers</li>
-            <li>Legal</li>
-        </ul>
-    </footer>
+
 
 </html>

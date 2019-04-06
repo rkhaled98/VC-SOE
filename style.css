@@ -19,12 +19,20 @@ button{
     border-radius: 12px;
 }
 
+a{
+    text-decoration: none;
+}
+
 
 
 .cover{
-    background-image: url(img/wp-candidate-move.jpg);
+    background-image: url(img/wp-banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
     object-fit: cover;
+    object-position: 50% 50%;
+    
 }
 
 
@@ -49,23 +57,27 @@ button{
     flex-shrink: 1
 }
 
+.nav-item-float{
+    display: inline-block;
+    position:fixed;
+    z-index: 3;
+    top:23px;
+    right: 9px;
+    color:white;
+    
+}
+
 #hamburger{
     display:none;
     font-size: 20px;
 }
-
-.navigation > a{
-    text-decoration: none;
-}
-
-
 
 #nav-logo{
     margin-right: auto;
 }
 
 /* Small screens */
-@media all and (max-width: 829px) {
+@media all and (max-width: 840px) {
     .nav-item{
         display:none;
     }
@@ -74,6 +86,9 @@ button{
     }
     #nav-logo{
         display: flex;
+    }
+    #sign-up-nav-float{
+        display: none;
     }
 }
 
@@ -103,10 +118,11 @@ button{
     flex-grow: 2;
     height: 400px;
     width: 500px;
+    border-radius: 12px;
 }
 
 /* Small screens */
-@media all and (max-width: 829px) {
+@media all and (max-width: 840px) {
     .greeting {
       /* On small screens, we are no longer using row direction but column */
       flex-direction: column-reverse;
@@ -118,17 +134,154 @@ button{
   }
 
 
-.section-odd{
-    margin:0px;
-    padding:0px;
-    /* background-color: #3EC28F; */
+.companies-container{
+    display:flex;
+    flex-flow: row wrap;
+    /* justify-content: flex-end; */
+    justify-content: space-between;
+    /* justify-content: flex-start | flex-end | center | space-between | space-around */
+    align-items: center;
+    /* align-items: flex-start | flex-end | center | baseline | stretch */
+    flex-direction: row;
+    /*flex-direction: row | row-reverse | column | column-reverse*/
 }
 
-.section-even{
-    margin:0px;
-    padding:0px;
-    /* background-color: #C095FA; */
+.companies-header{
+    margin-top: 50px;
+    width:100%;
+    text-align: center;
 }
+
+.companies-item{
+    font-size:75px;
+    height:75px;
+    width:100px;
+}
+
+.companies-container:hover ~ .nav-item-float{
+    background-color: blue;
+}
+
+.testimonial-section{
+    background-color: #3EC28F;
+    text-align: center;    
+    margin-top: 75px;
+    display:flex;
+    flex-flow: column wrap;
+    /* justify-content: flex-end; */
+    justify-content: space-between;
+    /* justify-content: flex-start | flex-end | center | space-between | space-around */
+    align-items: center;
+    /* align-items: flex-start | flex-end | center | baseline | stretch */
+    flex-direction: column;
+    /*flex-direction: row | row-reverse | column | column-reverse*/
+}
+
+.testimonial-section > h4{
+    width: 45%;
+}
+
+
+.testimonial-section > div > img{
+    height:75px;
+    width:75px;
+    border-radius: 100%;
+}
+
+.description-container{
+    text-align:center;
+    margin-top: 75px;
+    display:flex;
+    flex-flow: column wrap;
+    /* justify-content: flex-end; */
+    justify-content: space-between;
+    /* justify-content: flex-start | flex-end | center | space-between | space-around */
+    align-items: center;
+    /* align-items: flex-start | flex-end | center | baseline | stretch */
+    flex-direction: column;
+    /*flex-direction: row | row-reverse | column | column-reverse*/
+}
+
+.description-header{
+    width:100%;
+}
+
+.description-pics-container{
+    width:100%;
+    display:flex;
+    flex-flow: row wrap;
+    /* justify-content: flex-end; */
+    justify-content: center;
+    /* justify-content: flex-start | flex-end | center | space-between | space-around */
+    align-items: flex-start;
+    /* align-items: flex-start | flex-end | center | baseline | stretch */
+    flex-direction: row;
+    /*flex-direction: row | row-reverse | column | column-reverse*/
+}
+
+.description-pics-container > div > div > img{
+    height:250px;
+    width:250px;
+    border-radius: 12px;
+}
+
+.description-pics-item{
+    margin-left: 35px;
+    margin-right: 10px;
+}
+
+.description-pics-caption{
+    width:250px;
+}
+
+.signup-container{
+    margin-top:50px;
+    display:flex;
+    flex-flow: column wrap;
+    /* justify-content: flex-end; */
+    justify-content: flex-end;
+    /* justify-content: flex-start | flex-end | center | space-between | space-around */
+    align-items: center;
+    /* align-items: flex-start | flex-end | center | baseline | stretch */
+    flex-direction: column;
+    /*flex-direction: row | row-reverse | column | column-reverse*/
+}
+
+.signup-container > div > input{
+    padding: 12px 20px;
+    width: 250px;
+    margin: 4px 0;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+.signup-container > button{
+    width: 250px;
+    margin: 4px 0;
+}
+
+.small{
+    font-size: 12px;
+    width: 250px;
+}
+
+footer{
+    margin-top: 75px;
+    display:flex;
+    flex-flow: row wrap;
+    /* justify-content: flex-end; */
+    justify-content: space-around;
+    /* justify-content: flex-start | flex-end | center | space-between | space-around */
+    align-items: center;
+    /* align-items: flex-start | flex-end | center | baseline | stretch */
+    flex-direction: row;
+    /*flex-direction: row | row-reverse | column | column-reverse*/
+}
+
+.foot-item{
+    height: 300px;
+}
+
 
 
 /* animation behavior */
@@ -136,3 +289,5 @@ button{
 button:hover{
     background-color: rgb(69, 128, 71)
 }
+
+
