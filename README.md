@@ -15,7 +15,7 @@ there are still some stylistic bugs with it.
 The fixed position sign up button gave me some issues in terms of logistics of the initial animation downwards, 
 because I think the inspiration site may have used some JavaScript to accomplish it. 
 I would love to know how and if this can be implemented in pure CSS. Also, unfortunately I didn't have enough time
-to develop a nice looking drop down menu for mobile, so I decided to comment out my progress in the latest commit.
+to develop a nice looking drop down menu for mobile, so I decided to comment out my progress in the latest commit. Finally, the alternating text animation is cool, but doesn't look as clean in certain window sizes.
 
 ## Screenshots of layout stage
 
