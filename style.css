@@ -121,7 +121,7 @@ input[type=checkbox]:checked ~ #dropdown{
     display:block;
 }
 
-/* Small screens */
+/* Smaller screens */
 @media all and (max-width: 840px) {
     .nav-item{
         display:none;
@@ -172,7 +172,7 @@ input[type=checkbox]:checked ~ #dropdown{
     color: white;
 }
 
-/* Small screens */
+/* Smaller screens */
 @media all and (max-width: 840px) {
     .greeting {
       /* On small screens, we are no longer using row direction but column */
