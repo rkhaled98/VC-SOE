@@ -21,6 +21,16 @@ to develop a nice looking drop down menu for mobile, so I decided to comment out
 
 ![Screen Cap HTML Layour Stage](/img/html-cap.png?raw=true "Layout Stage")
 
+## "Special" Features
+
+- Sliding vertical animation ("A society of [Engineers, People, Friends...]")
+- Hamburger icon on nav bar resize
+- Fixed position floating sign up button
+- Clearer images on hover over (opacity changing on hover)
+- Button hover over animation
+- Color changing on nav link hover
+
+
 
 
 
