@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html>
-
-    <head>
-        
+    <head>   
         <title>VC SOE</title>
         <!-- <meta http-equiv="refresh" content="30"> -->
         <link rel="stylesheet" type="text/css" href="style.css">
@@ -26,14 +24,39 @@
                         <a href="#" class="nav-item">Sign In</a>
                         <button id="sign-up-nav" class="nav-item">Sign Up</button>
                         
-                        <div id="hamburger"><i class="nav-item fas fa-bars"></i></div>
-                </div>
+                        <div id="hamburger">
+                                <label for="hamburger-box">
+                                    <!-- MENU -->
+                                    <i type="checkbox" class="nav-item fas fa-bars"></i>
+                                </label>
+                                <input type="checkbox" id="hamburger-box">                                
+                                <ul id="dropdown">
+                                        <li><a href="#">Link One</a></li>
+                                        <li><a href="#">Link Two</a></li>
+                                        <li><a href="#">Link Three</a></li>
+                                        <li><a href="#">Link Four</a></li>
+                                </ul>
+                        </div>
+            </div>
                 <button id="sign-up-nav-float" class="nav-item-float">Sign Up</button>
             </nav>
 
             <div class="greeting">
                 <div class="greeting-item greeting-text">
-                    <h1>A collective of engineers.</h1>
+                        <!-- <h1>A collective of Engineers</h1> -->
+
+                        <section class="wrapper">
+                        <!-- done with some borrowed CSS from https://codepen.io/amritleone/pen/qERPmW -->
+                                <h2 class="sentence">A Society of
+                                  <div class="slidingVertical">
+                                    <span>Engineers.</span>
+                                    <span>People.</span>
+                                    <span>Creatives.</span>
+                                    <span>Scholars.</span>
+                                    <span>Friends.</span>
+                                  </div>
+                                </h2>
+                        </section>
                     <h3>Working together to build solutions to meaningful problems!</h3>
                     <button>Learn More</button>
                 </div>
@@ -154,7 +177,9 @@
     
             <div id="signup-section" class="signup-container">
                 <h4>Create an account to get in touch.</h4>
-                <button>Sign up with Google</button>
+                <button id="sign-up-google">
+                    <i class="fab fa-google"></i> &nbsp;&nbsp; Sign up with Google
+                </button>
                 <div>or</div>
                 <div><input placeholder="Email"></div>
                 <div><input placeholder="Password"></div>
@@ -165,9 +190,9 @@
             <footer>
                 <div class="foot-item">
                     <h2>VC SOE</h2>
-                    <p>Instagram</p>
-                    <p>Facebook</p>
-                    <p>Twitter</p>
+                    <a href="#"><p><i class="fab fa-instagram"></i> Instagram</p></a>
+                    <a href="#"><p><i class="fab fa-facebook-f"></i> Facebook</p></a>
+                    <a href="#"><p><i class="fab fa-twitter"></i> Twitter</p></a>
                 </div>
 
                 <div class="foot-item">
@@ -175,7 +200,7 @@
                         <li><h5>What we do</h5> </li>
                         <li>Web Development</li>
                         <li>Software Engineering</li>
-                        <li>Software Design and Implementation</li>
+                        <li>Software Design</li>
                         <li>Graphic Design</li>
                         <li>Brainstorming</li> 
                         <li>Consulting</li> 
@@ -193,14 +218,14 @@
                         <li>Features</li>
                         <li>Contact</li>
                         <li>Learn to code!</li>
-                        <li>VC SOE Organization</li>
+                        <li>Organization</li>
                     </ul>
                 </div>
 
                 <div class="foot-item">
                     <ul style="list-style-type:none;">
                             <li><h5>Resources</h5> </li>
-                            <li>Community Resources Hub</li>
+                            <li>Resources</li>
                             <li>Support</li>
                             <li>Developers</li>
                             <li>Downloads</li>
