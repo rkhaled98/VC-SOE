@@ -17,6 +17,10 @@ because I think the inspiration site may have used some JavaScript to accomplish
 I would love to know how and if this can be implemented in pure CSS. Also, unfortunately I didn't have enough time
 to develop a nice looking drop down menu for mobile, so I decided to comment out my progress in the latest commit.
 
+## Screenshots of layout stage
+
+![Screen Cap HTML Layour Stage](/img/html-cap.png?raw=true "Layout Stage")
+
 
 
 
